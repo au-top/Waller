@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "3ec8e8c0-d998-4360-b194-e24c9155a5b2",
+		"name": "waller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/ew/recv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"level\": 100,\r\n    \"appName\": \"test\",\r\n    \"appVersion\": \"0.0.1\",\r\n    \"allErrorInfo\": \"this is a test!\",\r\n    \"clientId\": \"Postman\",\r\n    \"minErrorInfo\": \"this is a test mini info\",\r\n    \"otherInfo\": {\"hello\":\"helloOvO\"},\r\n    \"token\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/ew/recv",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"ew",
+						"recv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ew/show",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passwd\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/ew/show",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"ew",
+						"show"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "404Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8081/test404",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"test404"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ew/statistics",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passwd\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/ew/statistics",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"ew",
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
